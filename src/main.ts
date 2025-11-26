@@ -1,12 +1,12 @@
 import {Product} from './models/Product';
 import {fetchProducts} from './services/apiService';
-import {calculateDiscount} from './utils/discountcalculator';
 import {calculateTax} from './utils/taxCalculator';
-import {handleError, CustomError} from './utils/errorHandler'
+import {handleError, CustomError} from './utils/errorHandler';
+
 
 async function main() {
 try {
-const productsData: await fetchProducts();
+const productsData = await fetchProducts();
 const products: Product[] = productsData.map(p => new Product(p.id, p.title, p.price, p.category, p.discountPercentage));
 
 products.forEach(p => {
