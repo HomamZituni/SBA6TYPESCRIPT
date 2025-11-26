@@ -1,7 +1,7 @@
-import {Product} from './models/Product';
-import {fetchProducts} from './services/apiService';
-import {calculateTax} from './utils/taxCalculator';
-import {handleError, CustomError} from './utils/errorHandler';
+import { Product } from './models/Product.js';
+import { fetchProducts } from './services/apiService.js';
+import { calculateTax } from './utils/taxCalculator.js';
+import { handleError } from './utils/errorHandler.js';
 
 
 async function main() {
