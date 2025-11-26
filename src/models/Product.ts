@@ -5,7 +5,7 @@ title: string;
 price: number; 
 category: string;
 discountPercentage: number;
-}
+
 
 // Constructor to initialize
 constructor (id: number, title: string, price: number, category: string, discountPercentage: number) {
@@ -13,8 +13,8 @@ this.id = id;
 this.title = title;
 this.price = price;
 this.category = category;
-this.discountPercentage = discountPercentage;
-}
+this.discountPercentage = discountPercentage; }
+
 
 // Display detail method
 displayDetails() {
@@ -28,5 +28,4 @@ displayDetails() {
 
 getPriceWithDiscount(): number {
 return this.price - (this.price * this.discountPercentage /100);
-}
-
+} }
